@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>iHolo</title>
+		<link rel="stylesheet" href="style/iCar.css" />
+			<meta charset="UTF-8">
+
+			<style>
+				body {
+					background-image: url('https://i.pinimg.com/originals/82/04/44/820444ef7caae49bf6a5610f645f6f36.jpg');
+			  		background-repeat: no-repeat;
+			  		background-size: cover;
+				}
+		  	</style>
+		
+	</head>
+	
+	<body>
+		<div class="topnav">
+			<h1 class="title">The Pomme Store</h1>
+			<a class="active" href="page paragraphe.html">Home</a>
+			<a href="iCar.html">iCar</a>
+			<a href="iRing.html">iRing</a>
+			<a href="iHolo.html">iHolo</a>
+		</div>
+		
+		<u><h1>iHolo</h1></u>
+
+		<div class="container">
+			<div class="image">
+				<img src="Image/iHolo.png" >
+			</div>
+
+			<div class="text">
+				<h4>La Magie de la Communication Holographique</h4>
+				<p>
+					L'iHolo apporte la magie des hologrammes à votre vie quotidienne. Imaginez pouvoir voir la personne avec qui vous parlez en appel sous forme d'hologramme, comme si elle était réellement présente devant vous. L'iHolo rend cette vision futuriste une réalité.
+				</p>
+				<h4>Simple à Utiliser, Puissant dans son Rendu</h4>
+				<p>Placez simplement l'iHolo sur l'écran de votre smartphone, activez-le, et regardez la magie opérer. Le petit projecteur holographique utilise une technologie avancée pour afficher des hologrammes nets et réalistes, créant une expérience de communication virtuelle inégalée.</p>
+				<h4>Compatibilité Universelle avec les Appareils Pomme</h4>
+				<p>L'iHolo est conçu pour s'intégrer harmonieusement avec l'écosystème Pomme. Que vous utilisiez un iPomme, une iCar, ou tout autre appareil Pomme compatible, l'iHolo se connecte sans effort, offrant une expérience utilisateur homogène.</p>
+				<h4>Interaction Intuitive</h4>
+				<p>Avec l'iHolo, l'interaction devient plus naturelle que jamais. Déplacez-vous dans la pièce tout en parlant, observez les expressions faciales en trois dimensions, et partagez des moments spéciaux avec vos proches, même à des kilomètres de distance.</p>
+				<h4>Sécurité et Confidentialité</h4>
+				<p>L'iHolo intègre des fonctionnalités de sécurité avancées pour assurer la confidentialité de vos conversations holographiques. Vous pouvez avoir la tranquillité d'esprit en sachant que vos échanges virtuels restent privés.</p>
+				<h3>Avec l'iHolo, Pomme continue de repousser les limites de l'innovation technologique. Découvrez une nouvelle dimension de la communication virtuelle, où chaque appel devient une expérience immersive. L'iHolo de Pomme - l'avenir de la communication est entre vos mains.</h3>
+			</div>
+		</div>
+
+	</body>
+</html>
