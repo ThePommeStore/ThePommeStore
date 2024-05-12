@@ -22,17 +22,57 @@
             <textarea id="address" name="address" required></textarea>
 
             <button type="submit" class="btn">Commander</button>
-            
-            <script> //J'ai du utiliser le javascript car impossible de changer de page sans cette méthode . Aucune idée de pourquoi
-                document.getElementById("buyForm").addEventListener("submit", function(event) {
-                    event.preventDefault();
-                    
-                     window.location.href = "final.html";
-                });
-            </script>
-
         </form>
     </div>
 
+    <script>
+        const SENDGRID_API_KEY = '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';
+
+        document.getElementById("buyForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            const emailData = {
+                to: 'thepommestore@email.fr',
+                from: formData.get('email'),
+                subject: 'New Order',
+                text: `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nCard Number: ${formData.get('card')}\nAddress: ${formData.get('address')}`
+            };
+
+            fetch('https://api.sendgrid.com/v3/mail/send', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${SENDGRID_API_KEY}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    personalizations: [{
+                        to: [{
+                            email: emailData.to
+                        }]
+                    }],
+                    from: {
+                        email: emailData.from
+                    },
+                    subject: emailData.subject,
+                    content: [{
+                        type: 'text/plain',
+                        value: emailData.text
+                    }]
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "confirmation.html";
+                } else {
+                    console.error('Failed to send email');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
 </body>
 </html>
