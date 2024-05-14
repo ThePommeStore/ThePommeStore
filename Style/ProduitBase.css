@@ -40,7 +40,27 @@ h1 {
 }
 
 
+.bouton-acheter {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.bouton-acheter a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.activee {
+    background-color: hsl(0, 1%, 43%);
+    color: white;
+}
 
 
 .container {
